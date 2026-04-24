@@ -13,3 +13,4 @@ out/
 # system
 .DS_Store
 *.local
+.vercel
