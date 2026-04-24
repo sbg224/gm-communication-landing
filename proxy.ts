@@ -5,7 +5,7 @@ const MAX_REQUESTS = 3;
 
 const store = new Map<string, { count: number; reset: number }>();
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const ip =
     req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "anonymous";
   const now = Date.now();
