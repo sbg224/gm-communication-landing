@@ -175,10 +175,14 @@ export default function Footer() {
             © {year} GM Communication · 3M SERVICES 31 SASU
           </span>
           <div style={{ display: "flex", gap: 24 }}>
-            {["Mentions légales", "Confidentialité", "CGU"].map((l) => (
+            {[
+              { label: "Mentions légales", href: "/mentions-legales" },
+              { label: "Confidentialité",  href: "/confidentialite"  },
+              { label: "CGU",              href: "/cgu"              },
+            ].map((l) => (
               <a
-                key={l}
-                href="#"
+                key={l.label}
+                href={l.href}
                 className="label-mono"
                 style={{
                   color: "var(--text-dim)",
@@ -188,7 +192,7 @@ export default function Footer() {
                 onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-dim)")}
               >
-                {l}
+                {l.label}
               </a>
             ))}
           </div>
