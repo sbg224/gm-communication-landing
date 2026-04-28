@@ -225,8 +225,8 @@ export default function Hero() {
               <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 0", borderBottom: i < 5 ? "1px solid var(--border)" : "none" }}>
                 <div style={{ width: 32, height: 32, borderRadius: 8, background: s.active ? "var(--coral-dim)" : s.done ? "#F0FAF4" : "var(--bg-2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, flexShrink: 0 }}>{s.icon}</div>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 12, fontWeight: 500, color: s.active ? "var(--coral)" : s.pending ? "var(--text-dim)" : "var(--text)" }}>{s.label}</div>
-                  <div style={{ fontSize: 10, color: "var(--text-dim)", fontFamily: "var(--font-mono)" }}>{s.sub}</div>
+                  <div style={{ fontSize: 12, fontWeight: 500, color: "var(--text)" }}>{s.label}</div>
+                  <div style={{ fontSize: 10, color: "var(--coral)", fontFamily: "var(--font-mono)", opacity: s.pending ? 0.5 : 1 }}>{s.sub}</div>
                 </div>
                 <div style={{ width: 6, height: 6, borderRadius: "50%", background: s.done ? "#22C55E" : s.active ? "var(--coral)" : "var(--border-mid)", animation: s.active ? "pulse-coral 1.5s ease-in-out infinite" : "none", flexShrink: 0 }}/>
               </div>
