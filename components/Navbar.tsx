@@ -2,10 +2,13 @@
 import { useState, useEffect } from "react";
 
 const LogoMark = () => (
-  <svg viewBox="0 0 64 64" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="2" width="60" height="60" fill="none" stroke="#1C1C2E" strokeWidth="1.5"/>
-    <text x="32" y="42" fontFamily="Instrument Serif,Georgia,serif" fontSize="36" fontStyle="italic" fill="#1C1C2E" textAnchor="middle">gm</text>
-    <circle cx="56" cy="56" r="4" fill="#E74C3C"/>
+  <svg viewBox="0 0 252 161" width="54" height="34" xmlns="http://www.w3.org/2000/svg">
+    <path d="M86.8545 148.708L87.7275 29.2561C87.7275 29.2561 105.921 39.984 129.48 39.984C158.48 39.984 173.29 29.2561 173.29 29.2561"
+      stroke="#2A5218" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <path d="M175.428 148.984L175.428 44.4639"
+      stroke="#6B9B4E" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <path d="M104.48 25.984V138.367C104.48 143.4 111.019 148.355 128.019 148.984C145.019 148.355 155.48 143.4 155.48 138.367V115.284"
+      stroke="#C5A96A" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
@@ -29,7 +32,7 @@ export default function Navbar() {
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 50,
-      background: scrolled ? "rgba(250,250,247,0.94)" : "transparent",
+      background: scrolled ? "rgba(242,240,232,0.95)" : "transparent",
       backdropFilter: scrolled ? "blur(16px)" : "none",
       borderBottom: scrolled ? "1px solid rgba(28,28,46,0.09)" : "1px solid transparent",
       transition: "all 0.35s",
@@ -40,6 +43,7 @@ export default function Navbar() {
           <div>
             <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 600, color: "var(--text)", letterSpacing: "-0.01em" }}>
               GM <span style={{ color: "var(--coral)" }}>Communication</span>
+
             </div>
             <div className="mono-label" style={{ marginTop: 1 }}>Toulouse · Digital · IA</div>
           </div>

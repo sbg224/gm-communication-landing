@@ -1,10 +1,13 @@
 "use client";
 
 const LogoMark = ({ size = 40 }: { size?: number }) => (
-  <svg viewBox="0 0 64 64" width={size} height={size} xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="2" width="60" height="60" fill="none" stroke="#e74c3c" strokeWidth="1.5" />
-    <text x="32" y="42" fontFamily="Instrument Serif, Playfair Display, serif" fontSize="36" fontStyle="italic" fill="#e74c3c" textAnchor="middle" fontWeight="400">gm</text>
-    <circle cx="56" cy="56" r="4" fill="#e74c3c" />
+  <svg viewBox="0 0 252 161" width={size * 1.6} height={size} xmlns="http://www.w3.org/2000/svg">
+    <path d="M86.8545 148.708L87.7275 29.2561C87.7275 29.2561 105.921 39.984 129.48 39.984C158.48 39.984 173.29 29.2561 173.29 29.2561"
+      stroke="#2A5218" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <path d="M175.428 148.984L175.428 44.4639"
+      stroke="#6B9B4E" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <path d="M104.48 25.984V138.367C104.48 143.4 111.019 148.355 128.019 148.984C145.019 148.355 155.48 143.4 155.48 138.367V115.284"
+      stroke="#C5A96A" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 

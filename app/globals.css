@@ -1,40 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@200;300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ─── Design Tokens — Light Warm Editorial ───────────────── */
+/* ─── Design Tokens — 3M Services · Charte Graphique ────── */
 :root {
   /* Backgrounds */
-  --bg:      #FAFAF7;        /* warm white — page bg */
-  --bg-2:    #F2EDE4;        /* warm sand — section alt */
-  --bg-3:    #FFFFFF;        /* pure white — cards */
-  --bg-dark: #0a0a0f;        /* kept for footer only */
+  --bg:      #F2F0E8;        /* Ivoire — fond principal */
+  --bg-2:    #E8E4D6;        /* Ivoire sombre — sections alt */
+  --bg-3:    #FFFFFF;        /* Blanc pur — cards */
+  --bg-dark: #080C07;        /* Charbon — footer / dark surfaces */
 
   /* Text */
-  --text:       #1C1C2E;     /* deep navy */
-  --text-muted: #5C5C72;     /* muted slate */
-  --text-dim:   #A0A0B0;     /* dimmed / placeholders */
+  --text:       #080C07;     /* Charbon */
+  --text-muted: #3A5A2A;     /* Mousse clair */
+  --text-dim:   #7A9A6A;     /* Sauge dim */
 
-  /* Brand coral */
-  --coral:       #E74C3C;
-  --coral-light: #FF6B5B;
-  --coral-dim:   rgba(231,76,60,0.08);
-  --coral-glow:  rgba(231,76,60,0.22);
+  /* Brand vert (accent principal) — remplace coral */
+  --coral:       #6B9B4E;    /* Vert 3M */
+  --coral-light: #A8C88A;    /* Sauge */
+  --coral-dim:   rgba(107,155,78,0.10);
+  --coral-glow:  rgba(107,155,78,0.25);
 
-  /* Navy secondary */
-  --navy:        #2C3E50;
-  --navy-light:  #3D5166;
+  /* Ocre (accent secondaire / CTA doux) */
+  --ocre:        #C5A96A;
+  --ocre-dim:    rgba(197,169,106,0.15);
+
+  /* Mousse / Nuit */
+  --navy:        #0D1A0A;    /* Nuit — remplace navy */
+  --navy-light:  #2A5218;    /* Mousse */
 
   /* Borders */
-  --border:      rgba(28,28,46,0.09);
-  --border-mid:  rgba(28,28,46,0.16);
-  --border-dark: rgba(28,28,46,0.25);
+  --border:      rgba(42,82,24,0.12);
+  --border-mid:  rgba(42,82,24,0.22);
+  --border-dark: rgba(42,82,24,0.35);
 
   /* Fonts */
-  --font-serif: 'Instrument Serif', 'Georgia', serif;
-  --font-sans:  'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'Inter', system-ui, sans-serif;
   --font-mono:  'Space Mono', 'JetBrains Mono', monospace;
 }
 
@@ -51,7 +55,7 @@ body {
 }
 
 /* ─── Selection ───────────────────────────────────────────── */
-::selection { background: var(--coral); color: #fff; }
+::selection { background: var(--coral); color: #F2F0E8; }
 
 /* ─── Scrollbar ───────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 3px; }
@@ -133,6 +137,7 @@ body {
   background: var(--coral-light);
   box-shadow: 0 8px 24px var(--coral-glow);
   transform: translateY(-1px);
+  color: #080C07;
 }
 
 .btn-outline {
@@ -156,6 +161,7 @@ body {
   border-color: var(--coral);
   color: var(--coral);
   transform: translateY(-1px);
+  background: var(--coral-dim);
 }
 
 /* ─── Card ────────────────────────────────────────────────── */

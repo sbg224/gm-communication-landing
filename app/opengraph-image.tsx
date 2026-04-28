@@ -15,12 +15,12 @@ export default function OgImage() {
           justifyContent: "center",
           width: "100%",
           height: "100%",
-          background: "#0a0a0f",
+          background: "#F2F0E8",
           padding: "80px",
           position: "relative",
         }}
       >
-        {/* Coral blob */}
+        {/* Vert blob */}
         <div
           style={{
             position: "absolute",
@@ -29,20 +29,20 @@ export default function OgImage() {
             width: 400,
             height: 400,
             borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(231,76,60,0.25) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(107,155,78,0.18) 0%, transparent 70%)",
           }}
         />
 
         {/* Label */}
         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32 }}>
-          <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#E74C3C" }} />
+          <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#6B9B4E" }} />
           <span
             style={{
               fontFamily: "monospace",
               fontSize: 12,
               letterSpacing: "0.16em",
               textTransform: "uppercase",
-              color: "rgba(245,245,240,0.4)",
+              color: "rgba(42,82,24,0.5)",
             }}
           >
             AGENCE IA-FIRST · TOULOUSE
@@ -54,7 +54,7 @@ export default function OgImage() {
           style={{
             fontSize: 72,
             fontWeight: 400,
-            color: "#F5F5F0",
+            color: "#080C07",
             lineHeight: 1.05,
             marginBottom: 8,
             fontFamily: "serif",
@@ -66,7 +66,7 @@ export default function OgImage() {
           style={{
             fontSize: 52,
             fontWeight: 400,
-            color: "#E74C3C",
+            color: "#6B9B4E",
             fontStyle: "italic",
             fontFamily: "serif",
             marginBottom: 40,
@@ -80,7 +80,7 @@ export default function OgImage() {
           style={{
             fontSize: 20,
             fontWeight: 300,
-            color: "rgba(245,245,240,0.5)",
+            color: "rgba(42,82,24,0.6)",
             fontFamily: "sans-serif",
           }}
         >
@@ -103,7 +103,7 @@ export default function OgImage() {
             style={{
               fontFamily: "monospace",
               fontSize: 13,
-              color: "rgba(245,245,240,0.3)",
+              color: "rgba(42,82,24,0.4)",
               letterSpacing: "0.08em",
             }}
           >
@@ -116,11 +116,11 @@ export default function OgImage() {
               justifyContent: "center",
               width: 40,
               height: 40,
-              border: "1.5px solid #E74C3C",
+              border: "1.5px solid #6B9B4E",
               borderRadius: "50%",
             }}
           >
-            <span style={{ color: "#E74C3C", fontSize: 18, fontStyle: "italic", fontFamily: "serif" }}>
+            <span style={{ color: "#6B9B4E", fontSize: 18, fontStyle: "italic", fontFamily: "serif" }}>
               gm
             </span>
           </div>
