@@ -157,7 +157,7 @@ export default function WhyUs() {
 
         {/* Comparison */}
         <div style={{ marginTop: 64, overflowX: "auto" }}>
-          <div className="label-mono" style={{ marginBottom: 24, color: "var(--text-dim)" }}>
+          <div className="label-mono" style={{ marginBottom: 24, color: "var(--text-muted)" }}>
             Comparatif — Freelance vs Agence classique vs GM Communication
           </div>
           <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 600 }}>
@@ -177,7 +177,7 @@ export default function WhyUs() {
                       letterSpacing: "0.12em",
                       textTransform: "uppercase",
                       fontWeight: 400,
-                      color: h === "GM Communication" ? "var(--coral)" : "var(--text-dim)",
+                      color: h === "GM Communication" ? "var(--navy-light)" : "var(--text-muted)",
                       background: h === "GM Communication" ? "var(--coral-dim)" : "transparent",
                     }}
                   >
@@ -205,9 +205,9 @@ export default function WhyUs() {
                   onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                 >
                   <td style={{ padding: "14px 16px", fontSize: 13, fontWeight: 300, color: "var(--text-muted)" }}>{feat}</td>
-                  <td style={{ textAlign: "center", padding: "14px 16px", fontSize: 13, fontWeight: 300, color: "var(--text-dim)" }}>{a}</td>
-                  <td style={{ textAlign: "center", padding: "14px 16px", fontSize: 13, fontWeight: 300, color: "var(--text-dim)" }}>{b}</td>
-                  <td style={{ textAlign: "center", padding: "14px 16px", fontSize: 13, fontWeight: 500, color: "var(--coral)", background: "var(--coral-dim)" }}>{c}</td>
+                  <td style={{ textAlign: "center", padding: "14px 16px", fontSize: 13, fontWeight: 300, color: "var(--text-muted)" }}>{a}</td>
+                  <td style={{ textAlign: "center", padding: "14px 16px", fontSize: 13, fontWeight: 300, color: "var(--text-muted)" }}>{b}</td>
+                  <td style={{ textAlign: "center", padding: "14px 16px", fontSize: 13, fontWeight: 500, color: "var(--navy-light)", background: "var(--coral-dim)" }}>{c}</td>
                 </tr>
               ))}
             </tbody>
