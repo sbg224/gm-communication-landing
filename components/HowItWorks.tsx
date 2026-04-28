@@ -78,44 +78,39 @@ export default function HowItWorks() {
                 transitionDelay: `${i * 0.1}s`,
                 background: "var(--bg)",
                 padding: "40px 32px",
-                position: "relative",
                 transition: "background 0.3s",
                 cursor: "default",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.background = "var(--bg-2)")}
               onMouseLeave={(e) => (e.currentTarget.style.background = "var(--bg)")}
             >
-              {/* Number */}
-              <div
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontStyle: "italic",
-                  fontSize: 72,
-                  lineHeight: 1,
-                  color: "var(--border-mid)",
-                  position: "absolute",
-                  top: 24,
-                  right: 24,
-                  userSelect: "none",
-                }}
-              >
-                {step.num}
-              </div>
-
-              {/* Time badge */}
-              <div
-                className="label-mono"
-                style={{
-                  display: "inline-block",
-                  padding: "4px 10px",
-                  border: "1px solid var(--border)",
-                  marginBottom: 24,
-                  color: "var(--coral)",
-                  borderColor: "rgba(231,76,60,0.25)",
-                  background: "var(--coral-dim)",
-                }}
-              >
-                {step.time}
+              {/* Top row: badge + number */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 32 }}>
+                <div
+                  className="label-mono"
+                  style={{
+                    display: "inline-block",
+                    padding: "4px 10px",
+                    border: "1px solid var(--coral-dim)",
+                    color: "var(--coral)",
+                    background: "var(--coral-dim)",
+                  }}
+                >
+                  {step.time}
+                </div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontStyle: "italic",
+                    fontSize: 64,
+                    lineHeight: 1,
+                    color: "var(--border-mid)",
+                    userSelect: "none",
+                    flexShrink: 0,
+                  }}
+                >
+                  {step.num}
+                </div>
               </div>
 
               <h3
