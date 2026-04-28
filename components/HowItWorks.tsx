@@ -68,17 +68,19 @@ export default function HowItWorks() {
         {/* Steps grid */}
         <div
           ref={gridRef}
-          style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 1, border: "1px solid var(--border)", background: "var(--border)" }}
+          style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", border: "1px solid var(--border-mid)" }}
+          className="steps-grid"
         >
           {steps.map((step, i) => (
+            <div key={i} className="step-col">
             <div
-              key={i}
               className={`reveal ${gridVisible ? "visible" : ""}`}
               style={{
                 transitionDelay: `${i * 0.1}s`,
                 background: "var(--bg)",
                 padding: "40px 32px",
-                transition: "background 0.3s",
+                height: "100%",
+                transition: "opacity 0.65s cubic-bezier(0.16,1,0.3,1), transform 0.65s cubic-bezier(0.16,1,0.3,1), background 0.3s",
                 cursor: "default",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.background = "var(--bg-2)")}
@@ -132,6 +134,7 @@ export default function HowItWorks() {
                 {step.tag}
               </div>
             </div>
+            </div>
           ))}
         </div>
 
@@ -142,6 +145,17 @@ export default function HowItWorks() {
           </a>
         </div>
       </div>
+
+      <style>{`
+        .step-col { display: flex; flex-direction: column; }
+        .step-col .reveal { flex: 1; }
+        @media (max-width: 740px) {
+          .steps-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .steps-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </section>
   );
 }

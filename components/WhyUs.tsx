@@ -114,9 +114,9 @@ export default function WhyUs() {
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: 1,
-            background: "var(--border)",
-            border: "1px solid var(--border)",
+            gap: "1px",
+            background: "var(--border-mid)",
+            border: "1px solid var(--border-mid)",
           }}
         >
           {advantages.map((adv, i) => (
@@ -127,7 +127,7 @@ export default function WhyUs() {
                 transitionDelay: `${i * 0.08}s`,
                 background: "var(--bg)",
                 padding: "36px 32px",
-                transition: "background 0.3s",
+                transition: "opacity 0.65s cubic-bezier(0.16,1,0.3,1), transform 0.65s cubic-bezier(0.16,1,0.3,1), background 0.3s",
                 cursor: "default",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.background = "var(--bg-2)")}
