@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const LogoMark = () => (
-  <svg viewBox="0 0 252 161" width="54" height="34" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 252 161" width="72" height="46" xmlns="http://www.w3.org/2000/svg">
     <path d="M86.8545 148.708L87.7275 29.2561C87.7275 29.2561 105.921 39.984 129.48 39.984C158.48 39.984 173.29 29.2561 173.29 29.2561"
       stroke="#2A5218" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
     <path d="M175.428 148.984L175.428 44.4639"
